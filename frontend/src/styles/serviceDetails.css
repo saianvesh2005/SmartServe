@@ -1,0 +1,47 @@
+.service-details{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:40px 20px;
+
+    background:#f8fafc;
+
+}
+
+.back-btn{
+
+    display:inline-block;
+
+    margin-bottom:30px;
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+}
+
+.booking-layout{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+@media(max-width:1000px){
+
+.booking-layout{
+
+grid-template-columns:1fr;
+
+}
+
+}

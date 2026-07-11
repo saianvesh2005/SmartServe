@@ -1,0 +1,250 @@
+/* ==========================================
+   SMARTSERVE ADMIN LAYOUT
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+}
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --secondary:#3b82f6;
+
+    --success:#22c55e;
+
+    --warning:#f59e0b;
+
+    --danger:#ef4444;
+
+    --white:#ffffff;
+
+    --background:#f5f7fb;
+
+    --text:#1f2937;
+
+    --text-light:#6b7280;
+
+    --border:#e5e7eb;
+
+    --shadow:0 10px 25px rgba(0,0,0,.08);
+
+    --radius:18px;
+}
+
+/* ==========================================
+   LAYOUT
+========================================== */
+
+.admin-layout{
+    display:flex;
+    min-height:100vh;
+    background:var(--background);
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.admin-main{
+    margin-left:280px;
+    width:calc(100% - 280px);
+    min-height:100vh;
+    background:#f5f7fb;
+    transition:all .3s ease;
+}
+
+/* Sidebar collapsed */
+
+.admin-main.expanded{
+    margin-left:90px;
+    width:calc(100% - 90px);
+}
+
+/* ==========================================
+   PAGE CONTENT
+========================================== */
+
+.admin-content{
+    margin-top:90px;
+    padding:30px;
+    min-height:calc(100vh - 90px);
+    overflow:auto;
+}
+
+.content-container{
+    width:100%;
+    max-width:1700px;
+    margin:auto;
+}
+
+/* ==========================================
+   PAGE
+========================================== */
+
+.page-container{
+    width:100%;
+}
+
+.page-title{
+    font-size:34px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:12px;
+}
+
+.page-subtitle{
+    color:#6b7280;
+    margin-bottom:30px;
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.section{
+    margin-bottom:35px;
+}
+
+.section-title{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   FLEX
+========================================== */
+
+.flex{
+    display:flex;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.grid{
+    display:grid;
+    gap:25px;
+}
+
+.grid-2{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.grid-3{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.grid-4{
+    grid-template-columns:repeat(4,1fr);
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:var(--shadow);
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+    width:8px;
+    height:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eef2ff;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:992px){
+
+    .admin-main{
+        margin-left:90px;
+        width:calc(100% - 90px);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .admin-main{
+        margin-left:0;
+        width:100%;
+    }
+
+    .admin-content{
+        padding:20px;
+    }
+
+}

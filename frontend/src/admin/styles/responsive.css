@@ -1,0 +1,338 @@
+/* ==========================================
+   LARGE SCREENS (1400px)
+========================================== */
+
+@media (max-width:1400px){
+
+    .stats-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .dashboard-bottom{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ==========================================
+   LAPTOP (1200px)
+========================================== */
+
+@media (max-width:1200px){
+
+    .admin-main{
+        margin-left:280px;
+        width:calc(100% - 280px);
+    }
+
+    .dashboard-middle{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-right{
+        grid-template-columns:repeat(2,1fr);
+        display:grid;
+        gap:20px;
+    }
+
+    .dashboard-bottom{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .search-box{
+        width:320px;
+    }
+
+}
+
+/* ==========================================
+   TABLET (992px)
+========================================== */
+
+@media (max-width:992px){
+
+    .admin-sidebar{
+
+        left:-280px;
+
+    }
+
+    .admin-sidebar.active{
+
+        left:0;
+
+    }
+
+    .admin-main{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+    .admin-navbar{
+
+        padding:0 20px;
+
+    }
+
+    .navbar-center{
+
+        display:none;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .dashboard-middle{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dashboard-bottom{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .quick-actions{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE (768px)
+========================================== */
+
+@media (max-width:768px){
+
+    .admin-content{
+
+        padding:20px;
+
+    }
+
+    .dashboard-hero{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .dashboard-hero h1{
+
+        font-size:28px;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dashboard-right{
+
+        display:flex;
+
+        flex-direction:column;
+
+    }
+
+    .dashboard-table{
+
+        min-width:700px;
+
+    }
+
+    .dashboard-card{
+
+        overflow-x:auto;
+
+    }
+
+    .quick-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .page-title{
+
+        font-size:28px;
+
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE (576px)
+========================================== */
+
+@media (max-width:576px){
+
+    .admin-navbar{
+
+        height:70px;
+
+        padding:0 15px;
+
+    }
+
+    .navbar-left h2{
+
+        font-size:18px;
+
+    }
+
+    .navbar-left p{
+
+        display:none;
+
+    }
+
+    .admin-user div{
+
+        display:none;
+
+    }
+
+    .icon-btn{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+    .menu-btn{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+    .dashboard-hero{
+
+        padding:25px;
+
+    }
+
+    .dashboard-hero h1{
+
+        font-size:24px;
+
+    }
+
+    .dashboard-card{
+
+        padding:18px;
+
+    }
+
+    .card-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+    .revenue-stats{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .chart-circle{
+
+        width:150px;
+
+        height:150px;
+
+    }
+
+    .chart-circle h1{
+
+        font-size:26px;
+
+    }
+
+}
+
+/* ==========================================
+   EXTRA SMALL (400px)
+========================================== */
+
+@media (max-width:400px){
+
+    .admin-content{
+
+        padding:15px;
+
+    }
+
+    .dashboard-hero{
+
+        padding:18px;
+
+    }
+
+    .dashboard-hero h1{
+
+        font-size:22px;
+
+    }
+
+    .page-title{
+
+        font-size:24px;
+
+    }
+
+    .stat-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .summary-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:20px;
+
+    }
+
+    .quick-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

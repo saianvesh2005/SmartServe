@@ -1,0 +1,323 @@
+/* =====================================================
+   SMARTSERVE - SERVICE PAGE CSS
+===================================================== */
+
+/* ===========================
+   Service Grid
+=========================== */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+/* ===========================
+   Service Card
+=========================== */
+
+.service-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:all .35s ease;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(37,99,235,.18);
+}
+
+.service-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.service-card:hover img{
+    transform:scale(1.05);
+}
+
+.service-content{
+    padding:22px;
+}
+
+.service-content h3{
+    font-size:24px;
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.service-category{
+    color:#666;
+    margin-bottom:12px;
+}
+
+.service-price{
+    color:#2563eb;
+    font-size:30px;
+    font-weight:700;
+    margin:18px 0;
+}
+
+.service-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:14px;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.service-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   Category Card
+=========================== */
+
+.category-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(37,99,235,.15);
+}
+
+.category-card.active{
+    background:#2563eb;
+    color:white;
+}
+
+.category-icon{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+/* =====================================================
+   SIMILAR SERVICES
+===================================================== */
+
+.similar-services{
+    margin:90px 0;
+}
+
+.similar-services h2{
+    text-align:center;
+    color:#1e3a8a;
+    font-size:48px;
+    margin-bottom:50px;
+    font-weight:700;
+}
+
+.similar-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.similar-card{
+    position:relative;
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:all .35s ease;
+}
+
+.similar-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(37,99,235,.18);
+}
+
+.similar-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.similar-card:hover img{
+    transform:scale(1.05);
+}
+
+.similar-card h3{
+    margin:18px;
+    color:#1e3a8a;
+    font-size:24px;
+}
+
+.similar-rating{
+    margin:0 18px;
+    color:#f59e0b;
+    font-size:18px;
+    font-weight:600;
+}
+
+.similar-price{
+    margin:15px 18px;
+    color:#2563eb;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.similar-btn{
+    display:block;
+    margin:20px;
+    padding:14px;
+    text-align:center;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.similar-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   Popular Badge
+=========================== */
+
+.popular-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#f59e0b;
+    color:white;
+    padding:8px 15px;
+    border-radius:25px;
+    font-size:13px;
+    font-weight:600;
+    z-index:2;
+}
+
+/* ===========================
+   Wishlist
+=========================== */
+
+.wishlist-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+    z-index:2;
+}
+
+.wishlist-btn:hover{
+    background:#ef4444;
+    color:white;
+}
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+.faq-section{
+    margin:90px 0;
+}
+
+.faq-section h2{
+    text-align:center;
+    color:#1e3a8a;
+    font-size:48px;
+    margin-bottom:45px;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:white;
+    border-radius:18px;
+    margin-bottom:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.faq-question{
+    width:100%;
+    background:white;
+    border:none;
+    padding:22px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:600;
+}
+
+.faq-answer{
+    padding:22px;
+    color:#555;
+    line-height:1.8;
+    border-top:1px solid #eee;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media(max-width:992px){
+
+.service-grid,
+.similar-grid{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+}
+
+@media(max-width:768px){
+
+.service-grid,
+.similar-grid{
+    grid-template-columns:1fr;
+}
+
+.service-content h3,
+.similar-card h3{
+    font-size:22px;
+}
+
+.service-price,
+.similar-price{
+    font-size:26px;
+}
+
+.similar-services h2,
+.faq-section h2{
+    font-size:36px;
+}
+
+}

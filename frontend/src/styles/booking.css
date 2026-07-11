@@ -1,0 +1,402 @@
+/* ===== Booking Card ===== */
+
+.booking-card{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:40px;
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    margin-bottom:40px;
+}
+
+.booking-image{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+.booking-info h1{
+    font-size:48px;
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.booking-rating{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#f59e0b;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.star-icon{
+    color:#fbbf24;
+}
+
+.booking-price{
+    color:#2563eb;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.booking-details p{
+    margin:14px 0;
+    font-size:18px;
+    color:#444;
+}
+
+.booking-description{
+    margin-top:30px;
+}
+
+.booking-description h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.booking-description p{
+    color:#666;
+    line-height:1.8;
+}
+
+.verified-badge{
+    display:inline-block;
+    background:#dcfce7;
+    color:#166534;
+    padding:8px 14px;
+    border-radius:25px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+@media(max-width:900px){
+
+.booking-card{
+    grid-template-columns:1fr;
+}
+
+.booking-image{
+    height:300px;
+}
+
+.booking-info h1{
+    font-size:34px;
+}
+
+.booking-price{
+    font-size:32px;
+}
+
+}
+
+/* ===================================
+   Booking Form
+=================================== */
+
+.booking-form{
+    background:#ffffff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    position:sticky;
+    top:100px;
+}
+
+.booking-form h2{
+    font-size:38px;
+    color:#1e3a8a;
+    margin-bottom:25px;
+}
+
+.booking-form label{
+    display:block;
+    margin:18px 0 8px;
+    font-weight:600;
+    color:#374151;
+}
+
+.booking-form input,
+.booking-form textarea,
+.date-picker{
+    width:100%;
+    padding:14px;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+    box-sizing:border-box;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus,
+.date-picker:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 8px rgba(37,99,235,.25);
+}
+
+.booking-form textarea{
+    resize:none;
+}
+
+.slots{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-top:15px;
+}
+
+.slot{
+    padding:12px;
+    border:none;
+    background:#e5e7eb;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.slot:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.slot.active{
+    background:#2563eb;
+    color:white;
+}
+
+.booking-summary{
+    background:#f8fafc;
+    margin-top:30px;
+    padding:20px;
+    border-radius:15px;
+}
+
+.booking-summary h3{
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 0;
+    font-size:17px;
+}
+
+.summary-row.total{
+    border-top:1px solid #ddd;
+    margin-top:15px;
+    padding-top:15px;
+    font-size:20px;
+    font-weight:700;
+}
+
+.confirm-booking-btn{
+    width:100%;
+    margin-top:25px;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.confirm-booking-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+@media(max-width:768px){
+
+.slots{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.booking-form{
+    position:static;
+}
+
+}
+
+/* ===== Form Grid ===== */
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+@media(max-width:768px){
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* =====================================
+   Booking Success Modal
+===================================== */
+
+.modal-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.booking-modal{
+    width:500px;
+    max-width:95%;
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+    animation:popup .3s ease;
+}
+
+@keyframes popup{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.booking-modal h2{
+    text-align:center;
+    color:#16a34a;
+    margin-bottom:20px;
+}
+
+.booking-id{
+    background:#eff6ff;
+    color:#2563eb;
+    padding:12px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.modal-section{
+    margin:20px 0;
+}
+
+.modal-section h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.modal-row{
+    display:flex;
+    justify-content:space-between;
+    padding:8px 0;
+    border-bottom:1px solid #eee;
+}
+
+.tech-card{
+    background:#f8fafc;
+    border-radius:15px;
+    padding:15px;
+    margin-top:15px;
+}
+
+.tech-card h4{
+    color:#2563eb;
+    margin-bottom:8px;
+}
+
+.tech-card p{
+    margin:6px 0;
+    color:#555;
+}
+
+.modal-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.track-btn,
+.close-btn{
+    flex:1;
+    border:none;
+    padding:14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.track-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.track-btn:hover{
+    background:#1d4ed8;
+}
+
+.close-btn{
+    background:#e5e7eb;
+}
+
+.close-btn:hover{
+    background:#d1d5db;
+}
+
+@media(max-width:768px){
+
+.modal-buttons{
+    flex-direction:column;
+}
+
+.booking-modal{
+    padding:20px;
+}
+
+}
+
+.modal-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.booking-modal{
+    width: 500px;
+    max-width: 95%;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}

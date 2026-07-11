@@ -1,0 +1,58 @@
+/* ==========================================
+   FORMS
+========================================== */
+
+.admin-form{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.form-group label{
+    font-weight:600;
+    margin-bottom:8px;
+    color:#374151;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    padding:12px 15px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.form-actions{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:25px;
+}

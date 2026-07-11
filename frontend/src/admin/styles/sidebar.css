@@ -1,0 +1,255 @@
+/* ================================
+   SMARTSERVE SIDEBAR
+================================ */
+
+.sidebar{
+
+    width:280px;
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #16244f,
+        #2c5fe4
+    );
+
+    color:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    padding:30px 20px;
+
+    box-shadow:6px 0 25px rgba(0,0,0,.15);
+
+}
+
+.sidebar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:40px;
+
+}
+
+.logo-icon{
+
+    width:65px;
+
+    height:65px;
+
+    background:#fff;
+
+    color:#2563eb;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+}
+
+.sidebar-logo h2{
+
+    font-size:34px;
+
+    margin-bottom:4px;
+
+}
+
+.sidebar-logo span{
+
+    letter-spacing:4px;
+
+    font-size:12px;
+
+    opacity:.8;
+
+}
+
+.sidebar-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.sidebar-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:15px 18px;
+
+    border-radius:14px;
+
+    transition:.35s;
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+.sidebar-link svg{
+
+    font-size:20px;
+
+}
+
+.sidebar-link:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateX(8px);
+
+}
+
+.sidebar-link.active{
+
+    background:#ffffff;
+
+    color:#2563eb;
+
+    font-weight:700;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.sidebar-footer{
+
+    text-align:center;
+
+}
+
+.logout-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-3px);
+
+}
+
+.sidebar-footer small{
+
+    display:block;
+
+    margin-top:20px;
+
+    line-height:28px;
+
+    opacity:.85;
+
+}
+
+/* ==========================
+   COLLAPSED SIDEBAR
+========================== */
+
+.sidebar{
+
+    transition:0.3s ease;
+
+}
+
+.sidebar.collapsed{
+
+    width:90px;
+
+    padding:30px 12px;
+
+}
+
+.sidebar.collapsed .sidebar-logo{
+
+    justify-content:center;
+
+}
+
+.sidebar.collapsed .sidebar-link{
+
+    justify-content:center;
+
+    padding:16px 0;
+
+}
+
+.sidebar.collapsed .sidebar-link span{
+
+    display:none;
+
+}
+
+.sidebar.collapsed .logout-btn{
+
+    justify-content:center;
+
+}
+
+.sidebar.collapsed .sidebar-footer small{
+
+    display:none;
+
+}

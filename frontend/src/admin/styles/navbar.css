@@ -1,0 +1,234 @@
+/* ==========================================
+   SMARTSERVE ADMIN NAVBAR
+========================================== */
+
+.admin-navbar{
+    position:fixed;
+    top:0;
+    left:280px;
+    right:0;
+
+    height:90px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #e5e7eb;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+    transition:all .3s ease;
+}
+
+/* Sidebar collapsed */
+
+.admin-main.expanded .admin-navbar{
+    left:90px;
+}
+
+/* ==========================
+   Left
+========================== */
+
+.navbar-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.menu-btn{
+    width:52px;
+    height:52px;
+
+    border:none;
+    border-radius:14px;
+
+    background:#2563eb;
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s;
+}
+
+.menu-btn:hover{
+    background:#1d4ed8;
+}
+
+.navbar-title h2{
+    font-size:22px;
+    font-weight:700;
+    color:#111827;
+    margin:0;
+}
+
+.navbar-title p{
+    margin-top:4px;
+    color:#6b7280;
+    font-size:15px;
+}
+
+/* ==========================
+   Right
+========================== */
+
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.search-box{
+    width:340px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:0 16px;
+
+    background:#f3f4f6;
+
+    border-radius:12px;
+}
+
+.search-box svg{
+    color:#6b7280;
+}
+
+.search-box input{
+    width:100%;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+}
+
+.icon-btn{
+    width:48px;
+    height:48px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#f3f4f6;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+    position:relative;
+}
+
+.icon-btn:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+.notification-btn{
+    position:relative;
+}
+
+.badge{
+    position:absolute;
+    top:-4px;
+    right:-4px;
+
+    width:20px;
+    height:20px;
+
+    border-radius:50%;
+
+    background:#ef4444;
+    color:#fff;
+
+    font-size:11px;
+    font-weight:600;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ==========================
+   Profile
+========================== */
+
+.admin-profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+}
+
+.profile-icon{
+    font-size:50px;
+    color:#2563eb;
+}
+
+.admin-profile h4{
+    margin:0;
+    font-size:18px;
+    color:#111827;
+}
+
+.admin-profile small{
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:992px){
+
+    .admin-navbar{
+        left:90px;
+        padding:0 20px;
+    }
+
+    .search-box{
+        width:220px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .admin-navbar{
+        left:0;
+    }
+
+    .search-box{
+        display:none;
+    }
+
+    .navbar-title p{
+        display:none;
+    }
+
+}

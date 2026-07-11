@@ -1,0 +1,74 @@
+/* ==========================================
+   TABLES
+========================================== */
+
+.admin-table{
+    width:100%;
+    overflow-x:auto;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.admin-table table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.admin-table th{
+    background:#eff6ff;
+    color:#111827;
+    padding:16px;
+    text-align:left;
+    font-weight:600;
+}
+
+.admin-table td{
+    padding:16px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.admin-table tbody tr:hover{
+    background:#f9fafb;
+}
+
+.admin-table img{
+    width:45px;
+    height:45px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.table-actions{
+    display:flex;
+    gap:10px;
+}
+
+.table-actions button{
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.table-actions button:hover{
+    transform:scale(1.05);
+}
+
+.table-pagination{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.table-pagination button{
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+}

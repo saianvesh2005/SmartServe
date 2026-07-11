@@ -1,0 +1,294 @@
+/* ===========================
+   SERVICES HERO
+=========================== */
+
+.services-hero {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.services-hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.services-hero p {
+  font-size: 22px;
+  margin-bottom: 35px;
+  opacity: 0.9;
+}
+
+.service-search {
+  width: 60%;
+  max-width: 700px;
+  padding: 18px 25px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  font-size: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* ===========================
+   SERVICES GRID
+=========================== */
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 70px;
+  background: #f5f7fb;
+}
+
+/* ===========================
+   SERVICE CARD
+=========================== */
+
+.service-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(37,99,235,0.25);
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.service-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: 0.35s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.service-card h3 {
+  color: #1e3a8a;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+.service-card p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.6;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   PRICE & RATING
+=========================== */
+
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.price-rating span:first-child {
+  color: #2563eb;
+}
+
+.price-rating span:last-child {
+  color: #f59e0b;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.service-card button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.service-card button:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37,99,235,.30);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:1024px) {
+
+.services-container {
+  grid-template-columns: repeat(2,1fr);
+  padding: 40px;
+}
+
+.service-search {
+  width: 80%;
+}
+
+}
+
+@media (max-width:768px) {
+
+.services-hero {
+  padding: 60px 20px;
+}
+
+.services-hero h1 {
+  font-size: 36px;
+}
+
+.services-hero p {
+  font-size: 18px;
+}
+
+.service-search {
+  width: 95%;
+}
+
+.services-container {
+  grid-template-columns: 1fr;
+  padding: 25px;
+}
+
+.service-card img {
+  width: 160px;
+  height: 160px;
+}
+
+}
+
+/* ===== Service Overview ===== */
+
+.service-overview{
+    margin:60px 0;
+}
+
+.service-overview h2{
+    font-size:36px;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.overview-description{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.overview-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    display:flex;
+    gap:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.overview-icon{
+    font-size:40px;
+    color:#2563eb;
+}
+
+.overview-box h4{
+    margin-bottom:10px;
+    color:#1e3a8a;
+}
+
+.overview-box p{
+    color:#666;
+    line-height:1.6;
+}
+
+/* ===========================
+   Service Features
+=========================== */
+
+.service-features{
+    margin:70px 0;
+}
+
+.service-features h2{
+    text-align:center;
+    color:#1e3a8a;
+    font-size:38px;
+    margin-bottom:45px;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.feature-box{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.feature-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(37,99,235,.18);
+}
+
+.feature-icon{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:18px;
+}
+
+.feature-box h3{
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.feature-box p{
+    color:#666;
+    line-height:1.7;
+}
+
