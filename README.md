@@ -1,51 +1,52 @@
 # 🚀 SmartServe
 
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![Vite](https://img.shields.io/badge/Build-Vite-purple)
-![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
-![Express.js](https://img.shields.io/badge/Framework-Express-lightgrey)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Build-Vite-646CFF?logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Framework-Express-000000?logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb&logoColor=white)
+![License](https://img.shields.io/badge/License-Educational-blue)
 
-## Local Service Booking Platform
+# MERN-Based Local Service Booking Platform
 
-SmartServe is a full-stack MERN application that connects customers with trusted local service providers. It enables users to discover services, book appointments, manage bookings, maintain wishlists, submit complaints, and receive notifications. Providers can manage their services and bookings through a dedicated dashboard, while administrators oversee platform operations.
+SmartServe is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that connects customers with trusted local service providers. Users can browse services, book appointments, manage bookings, and track service status, while providers and administrators manage services and platform operations through dedicated dashboards.
 
 ---
 
 # 📖 Table of Contents
 
-- About
+- Overview
 - Features
 - Tech Stack
-- Modules
 - Project Structure
 - Installation
 - Environment Variables
 - API Modules
-- Screens
+- Screenshots
 - Future Enhancements
 - Developer
 
 ---
 
-# 📌 About
+# 📌 Overview
 
-SmartServe simplifies the process of finding and booking local services such as:
+SmartServe simplifies local service booking by connecting customers with trusted professionals.
 
-- Electricians
-- Plumbers
-- Carpenters
-- AC Technicians
-- Cleaners
-- Painters
-- Other Local Professionals
+Supported services include:
 
-The application supports three major roles:
+- ⚡ Electricians
+- 🚰 Plumbers
+- 🪚 Carpenters
+- ❄️ AC Technicians
+- 🧹 Cleaners
+- 🎨 Painters
+- 🔧 Home Maintenance Services
 
-- Customer
-- Service Provider
-- Administrator
+The application supports three types of users:
+
+- 👤 Customer
+- 👨‍🔧 Service Provider
+- 👨‍💼 Administrator
 
 ---
 
@@ -53,40 +54,41 @@ The application supports three major roles:
 
 ## 👤 Customer
 
-- Secure Registration & Login
-- JWT Authentication
-- Browse Available Services
+- User Registration & Login
+- Secure JWT Authentication
+- Browse Services
+- Search & Filter Services
 - View Service Details
-- Search Services
 - Book Services
 - Booking History
 - Booking Status Tracking
-- Wishlist Management
-- Submit Reviews & Ratings
-- Raise Complaints
-- Notification Center
+- Wishlist
+- Reviews & Ratings
+- Complaint Management
+- Notifications
 - Profile Management
 
 ---
 
-## 👨‍🔧 Provider
+## 👨‍🔧 Service Provider
 
 - Provider Dashboard
-- Service Management
-- View Customer Bookings
+- Manage Services
+- View Bookings
 - Update Booking Status
-- Profile Management
+- Provider Profile Management
 
 ---
 
 ## 👨‍💼 Administrator
 
 - Admin Dashboard
-- User Management
-- Provider Management
-- Service Management
-- Booking Monitoring
+- Manage Users
+- Manage Providers
+- Manage Services
+- Manage Bookings
 - Complaint Management
+- Revenue Analytics
 
 ---
 
@@ -101,11 +103,13 @@ The application supports three major roles:
 - Framer Motion
 - React Toastify
 - React Icons
-- Swiper
 - Chart.js
 - Recharts
+- Swiper
 - React Datepicker
 - Lottie React
+
+---
 
 ## Backend
 
@@ -118,9 +122,15 @@ The application supports three major roles:
 - dotenv
 - CORS
 
+---
+
 ## Database
 
-- MongoDB Atlas
+- MongoDB (Local Database)
+
+## Database Tool
+
+- MongoDB Compass
 
 ---
 
@@ -129,14 +139,15 @@ The application supports three major roles:
 - Authentication
 - User Management
 - Provider Management
-- Admin Management
+- Admin Dashboard
 - Service Management
 - Booking Management
+- Booking Tracking
 - Wishlist
 - Reviews & Ratings
 - Complaint Management
 - Notification System
-- Booking Tracking
+- Revenue Dashboard
 
 ---
 
@@ -159,17 +170,20 @@ SmartServe
 ├── frontend
 │   ├── public
 │   ├── src
-│   │   ├── assets
-│   │   ├── components
-│   │   ├── context
-│   │   ├── pages
-│   │   ├── services
-│   │   ├── styles
-│   │   ├── App.jsx
-│   │   └── main.jsx
+│   │
+│   ├── assets
+│   ├── components
+│   ├── context
+│   ├── pages
+│   ├── services
+│   ├── styles
+│   ├── App.jsx
+│   └── main.jsx
 │
-├── package.json
+├── screenshots
+│
 ├── README.md
+├── package.json
 └── .gitignore
 ```
 
@@ -183,17 +197,23 @@ SmartServe
 git clone https://github.com/saianvesh2005/SmartServe.git
 ```
 
-## Backend
+## Navigate to Project
 
 ```bash
-cd SmartServe/backend
+cd SmartServe
+```
+
+## Install Backend Dependencies
+
+```bash
+cd backend
 
 npm install
 
 npm run dev
 ```
 
-## Frontend
+## Install Frontend Dependencies
 
 ```bash
 cd ../frontend
@@ -207,12 +227,12 @@ npm run dev
 
 # 🔐 Environment Variables
 
-Create a `.env` file inside the `backend` directory.
+Create a `.env` file inside the **backend** folder.
 
 ```env
 PORT=5000
 
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb://127.0.0.1:27017/smartserve
 
 JWT_SECRET=your_secret_key
 
@@ -225,121 +245,108 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ---
 
-# 📡 API Modules
+# 📡 Backend API Modules
 
-The backend currently includes APIs for:
-
-- Authentication
-- Users
-- Services
-- Bookings
-- Providers
-- Reviews
-- Wishlist
-- Complaints
-- Notifications
-- Admin
-
----
-
-# 🖥️ Application Screens
-
-The project currently includes the following pages:
-
-### Public Pages
-
-- Home
-- About
-- Contact
-- Login
-- Register
-
-### Service Pages
-
-- Services
-- Service Details
-- Book Service
-
-### Booking Pages
-
-- Booking Details
-- Booking History
-- Booking Status
-- Pending Bookings
-- Completed Bookings
-- Total Bookings
-
-### User Pages
-
-- User Dashboard
-- Profile
-- Wishlist
-
-### Provider Pages
-
-- Provider Dashboard
-
-### Additional Pages
-
-- Complaints
-
----
-
-# 🚀 Future Enhancements
-
-- Online Payment Integration
-- Google Maps Integration
-- Live Chat
-- Email Notifications
-- SMS Alerts
-- AI Service Recommendations
-- Invoice Generation
-- Coupon & Offers
-- Mobile Application
-- Multi-language Support
+- Authentication APIs
+- User APIs
+- Provider APIs
+- Service APIs
+- Booking APIs
+- Wishlist APIs
+- Review APIs
+- Complaint APIs
+- Notification APIs
+- Admin APIs
 
 ---
 
 # 📸 Screenshots
 
-Screenshots of the following modules will be added in future updates:
+## 🏠 Home Page
 
-- 🏠 Home Page
-- 🔐 Login Page
-- 📝 Registration Page
-- 🛠️ Services Page
-- 📄 Service Details
-- 📅 Booking Page
-- 📚 Booking History
-- 👤 User Dashboard
-- 👨‍🔧 Provider Dashboard
-- ❤️ Wishlist
-- 📢 Complaints
-- 👤 Profile
+![Home Page](screenshots/homepage.png)
+
+---
+
+## 👤 User Login
+
+![User Login](screenshots/userlogin.png)
+
+---
+
+## 👨‍💼 Admin Login
+
+![Admin Login](screenshots/adminlogin.png)
+
+---
+
+## 🛠 Services
+
+![Services](screenshots/services.png)
+
+---
+
+## 📅 Booking Confirmation
+
+> Replace the filename below if your image has a different name.
+
+![Booking Confirmation](screenshots/bookingconfirmation.png)
+
+---
+
+## 👨‍💼 Admin Dashboard
+
+![Admin Dashboard](screenshots/admindashboard.png)
+
+---
+
+## 📊 Revenue Dashboard
+
+![Revenue Dashboard](screenshots/revenue.png)
+
+---
+
+# 🚀 Future Enhancements
+
+- Online Payment Gateway
+- Live Chat
+- Google Maps Integration
+- Email Notifications
+- SMS Notifications
+- AI-Based Service Recommendation
+- Invoice Generation
+- Coupons & Offers
+- Mobile Application
+- Multi-language Support
 
 ---
 
 # 👨‍💻 Developer
 
-**Sai Anvesh Reddy**
+## Sai Anvesh Reddy
 
 **B.Tech – Computer Science & Engineering**
 
-GitHub:  
+GitHub:
+
 https://github.com/saianvesh2005
 
 ---
 
 # 📄 License
 
-This project is intended for educational and learning purposes.
+This project is developed for educational and learning purposes.
 
 ---
 
-# ⭐ Support
+# ⭐ Show Your Support
 
-If you found this project useful, please consider giving it a ⭐ on GitHub.
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
+
+It motivates further development and future enhancements.
 
 ---
 
-**SmartServe — Making Local Service Booking Simple, Fast, and Reliable.**
+# 💡 SmartServe
+
+### **Making Local Service Booking Simple, Fast, and Reliable.**
